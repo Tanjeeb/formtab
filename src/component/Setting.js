@@ -4,8 +4,8 @@ class Setting extends Component {
     render() {
         return (
             <div className="wrap">
-                <div className="header-title flx jst-bt">
-                    <div className="col">
+                <div className="flx jst-bt">
+                    <div className="col header-title">
                         <h2>settings</h2>
                     </div>
                     <div className="col flx jst-end">
@@ -19,7 +19,7 @@ class Setting extends Component {
                     <div className="cols">
                         <div className="col is-6">
                             <div className="frame-title">
-                                Site Logo
+                                <h3>Site Logo</h3>
                             </div>
                             <div className="frame-content">
                                 <label className="file">
@@ -29,16 +29,16 @@ class Setting extends Component {
                         </div>
                         <div className="col is-6">
                             <div className="frame-title">
-                                Site colours
+                                <h3>Site colours</h3>
                             </div>
                             <div className="frame-content cols">
                                 <div className="col">
-                                    <label className="prm-color">Primary Color</label>
-                                    <input className="bg-prm" type="button" name="prm-color"/>
+                                    <label className="prm-color df-text">Primary Color</label>
+                                    <input className="bg-prm btn" type="button" name="prm-color"/>
                                 </div>
                                 <div className="col">
-                                    <label className="snd-color">Primary Color</label>
-                                    <input className={"bg-snd"} type="button" name="snd-color"/>
+                                    <label className="snd-color df-text">Primary Color</label>
+                                    <input className={"bg-snd btn"} type="button" name="snd-color"/>
                                 </div>
                             </div>
                         </div>
@@ -140,16 +140,20 @@ class Setting extends Component {
                         </div>
                     </div>
 
-                    <div className={""}>
-                        <div className={"frame-title"}>
+                    <div className={"cols"}>
+                        <div className={"frame-title is-12"}>
                             <h2>
                             Details
                             </h2>
                         </div>
-                        <div className={"frame-content"}>
-                            <div className={""}>
-                                <label>CarProof API Key</label>
-                                <input type={"text"}/>
+                        <div className={"frame-content is-6"}>
+                            <div className={"control"}>
+                                <label className={"is-6"}>CarProof API Key</label>
+                                <input className={"control-field"} type={"text"}/>
+                            </div>
+                            <div className={"control"}>
+                                <label className={"is-6"}>Actions</label>
+                                <input className={"control-field"} type={"text"}/>
                             </div>
                         </div>
                     </div>
@@ -186,7 +190,7 @@ class Setting extends Component {
                                 </tr>
                                 <tr>
                                     <td>Event has completed</td>
-                                    <td ><label className={"check-container"}><input name={""} type={"checkbox"}/><span className={"checkmark"}></span></label></td>
+                                    <td ><label className={"check-container"}><input name={""} type={"checkbox"} checked/><span className={"checkmark"}></span></label></td>
                                     <td ><label className={"check-container"}><input name={""} type={"checkbox"}/><span className={"checkmark"}></span></label></td>
                                     <td ><label className={"check-container"}><input name={""} type={"checkbox"}/><span className={"checkmark"}></span></label></td>
 
@@ -228,6 +232,11 @@ class Setting extends Component {
                                 </tbody>
                             </table>
                         </div>
+                    </div>
+                </div>
+                <div className="flx jst-bt">
+                    <div className="col flx jst-end">
+                        <button type="submit" className="btn-primary mr-t-1">save</button>
                     </div>
                 </div>
             </div>

@@ -1,10 +1,173 @@
 import React, {Component} from 'react';
+import './Form.css'
 
 class Form extends Component {
     render() {
         return (
-            <div className="Form">
-                <h1>working react component Form</h1>
+            <div className="wrap">
+                <div className={"cols"}>
+                    <div className={"flx jst-end is-12"}>
+                        <div className={"tabs is-7"}>
+                            <ul>
+                                <li><a href={""} >Inventory</a></li>
+                                <li className={"active"}><a href={""} >Live</a> <span className={"arrow-down"}></span></li>
+                                <li><a href={""} >Sold</a></li>
+                                <li><a href={""} >Pending Offers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className={"flx col is-12"}>
+                        <div className={"sidebar "}>
+                            <div className={"filters"}>
+                                <p>Filters</p>
+                                <a href="">Reset</a>
+                            </div>
+                            <div className={"filter-list"}>
+                                <ul>
+                                    <li className={"flt-list"}>Year<span></span></li>
+                                    <li className={"flt-list"}>Make<span></span></li>
+                                    <li className={"flt-list"}>Model<span></span></li>
+                                    <li className={"flt-list"}>Trim<span></span></li>
+                                    <li className={"flt-list"}>VIN<span></span></li>
+                                    <li className={"flt-list"}>Status<span></span></li>
+                                    <li className={"flt-list"}>Colour<span></span></li>
+                                    <li className={"flt-list"}>Event Name<span></span></li>
+                                    <li className={"flt-list"}>City<span></span></li>
+                                    <li className={"flt-list"}>Auto Grade<span></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className={"main-container is-7"}>
+                            <div className={"prm-btn"}>
+                                <ul className={"is-6"}>
+                                    <li><a href={""} >Download CSV Template</a></li>
+                                    <li ><a href={""} >Upload CSV</a> </li>
+                                    <li><a href={""} >Create Event</a></li>
+                                    <li><a href={""} >Pending Offers</a></li>
+                                </ul>
+                            </div>
+                            <div className={"reports"}>
+                                <table className="fl-table">
+                                    <thead>
+                                    <tr>
+                                        <th>
+                                            <label className={"check-container"}>Vehicle<input name={""} type={"checkbox"}/><span className={"checkmark"}></span></label>
+                                            <span className={"arrow-up-down"}></span>
+                                        </th>
+                                        <th>VIN<span className={"arrow-up-down"}></span></th>
+                                        <th>Status<span className={"arrow-up-down"}></span></th>
+                                        <th>Event Name<span className={"arrow-up-down"}></span></th>
+                                        <th>Color<span className={"arrow-up-down"}></span></th>
+                                        <th>Reserve<span className={"arrow-up-down"}></span></th>
+                                        <th>Leading Bid<span className={"arrow-up-down"}></span></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <label className={"check-container"}>2018 Dodge Durango GT<input name={""} type={"checkbox"}/><span className={"checkmark"}></span></label>
+                                        </td>
+                                        <td >1c4rdjdg9jc448116</td>
+                                        <td >Live</td>
+                                        <td >Tuesday Sale</td>
+                                        <td >Black</td>
+                                        <td >$30,000</td>
+                                        <td >$31,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label className={"check-container"}>2018 Dodge Durango GT<input name={""} type={"checkbox"}/><span className={"checkmark"}></span></label>
+                                        </td>
+                                        <td >1c4rdjdg9jc448116</td>
+                                        <td >Live</td>
+                                        <td >Tuesday Sale</td>
+                                        <td >Black</td>
+                                        <td >$30,000</td>
+                                        <td >$31,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label className={"check-container"}>2018 Dodge Durango GT<input name={""} type={"checkbox"}/><span className={"checkmark"}></span></label>
+                                        </td>
+                                        <td >1c4rdjdg9jc448116</td>
+                                        <td >Live</td>
+                                        <td >Tuesday Sale</td>
+                                        <td >Black</td>
+                                        <td >$30,000</td>
+                                        <td >$31,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label className={"check-container"}>2018 Dodge Durango GT<input name={""} type={"checkbox"}/><span className={"checkmark"}></span></label>
+                                        </td>
+                                        <td >1c4rdjdg9jc448116</td>
+                                        <td >Live</td>
+                                        <td >Tuesday Sale</td>
+                                        <td >Black</td>
+                                        <td >$30,000</td>
+                                        <td >$31,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label className={"check-container"}>2018 Dodge Durango GT<input name={""} type={"checkbox"}/><span className={"checkmark"}></span></label>
+                                        </td>
+                                        <td >1c4rdjdg9jc448116</td>
+                                        <td >Live</td>
+                                        <td >Tuesday Sale</td>
+                                        <td >Black</td>
+                                        <td >$30,000</td>
+                                        <td >$31,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label className={"check-container"}>2018 Dodge Durango GT<input name={""} type={"checkbox"}/><span className={"checkmark"}></span></label>
+                                        </td>
+                                        <td >1c4rdjdg9jc448116</td>
+                                        <td >Live</td>
+                                        <td >Tuesday Sale</td>
+                                        <td >Black</td>
+                                        <td >$30,000</td>
+                                        <td >$31,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label className={"check-container"}>2018 Dodge Durango GT<input name={""} type={"checkbox"}/><span className={"checkmark"}></span></label>
+                                        </td>
+                                        <td >1c4rdjdg9jc448116</td>
+                                        <td >Live</td>
+                                        <td >Tuesday Sale</td>
+                                        <td >Black</td>
+                                        <td >$30,000</td>
+                                        <td >$31,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label className={"check-container"}>2018 Dodge Durango GT<input name={""} type={"checkbox"}/><span className={"checkmark"}></span></label>
+                                        </td>
+                                        <td >1c4rdjdg9jc448116</td>
+                                        <td >Live</td>
+                                        <td >Tuesday Sale</td>
+                                        <td >Black</td>
+                                        <td >$30,000</td>
+                                        <td >$31,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label className={"check-container"}>2018 Dodge Durango GT<input name={""} type={"checkbox"}/><span className={"checkmark"}></span></label>
+                                        </td>
+                                        <td >1c4rdjdg9jc448116</td>
+                                        <td >Live</td>
+                                        <td >Tuesday Sale</td>
+                                        <td >Black</td>
+                                        <td >$30,000</td>
+                                        <td >$31,500</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         );
     }

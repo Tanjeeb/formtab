@@ -1,0 +1,104 @@
+.tabs ul{
+    display: flex;
+    justify-content: space-between;
+}
+.tabs li{
+    width: 24%;
+    position: relative;
+    border-radius: 8px;
+    padding: 14px 0;
+    text-align: center;
+    border: #000080 1px solid;
+}
+.tabs a{
+    font-family:  'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color:#000080;
+}
+.tabs .active{
+    background: #000080;
+}
+.arrow-down{
+    left: 42%;
+    top: 40px;
+    width: 32px;
+    height: 35px;
+    z-index: 1000;
+    position: absolute;
+    background: url("../drop-down-arrow.png");
+}
+.tabs .active a{
+    color: whitesmoke;
+}
+.sidebar{
+    width: 23%;
+    margin-right: 24px;
+    background: white;
+    padding: 0 12px;
+}
+.filters{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #666;
+}
+.flt-list{
+    margin: 0;
+    position: relative;
+    border-bottom: #666 solid 1px;
+    padding: 13px 0px;
+    cursor: pointer;
+}
+.flt-list span{
+    background-image: url("../down-arrow.png");
+    background-repeat: no-repeat;
+    height: 14px;
+    width: 18px;
+    position: absolute;
+    right: 0;
+
+}
+
+.main-container{
+    background: white;
+    padding: 0 12px;
+}
+.prm-btn{
+    display: flex;
+    justify-content: end;
+    margin-top: 16px;
+}
+.prm-btn ul{
+    display: flex;
+    justify-content: space-between;
+}
+.prm-btn li{
+    position: relative;
+    border-radius: 4px;
+    padding: 7px 3px;
+    text-align: center;
+    border: #000080 1px solid;
+}
+.prm-btn a{
+    text-decoration: none;
+    font-size: 12px;
+}
+.arrow-up-down{
+    background-image: url("../up-and-down.png");
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    margin-left: 6px;
+    cursor: pointer;
+}
+.reports thead{
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+}
+.reports th{
+    position: relative;
+}
+.reports >.fl-table th,td{
+    text-align: left !important;
+}
