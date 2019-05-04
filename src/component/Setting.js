@@ -4,6 +4,7 @@ class Setting extends Component {
     render() {
         return (
             <div className="wrap">
+                <form method={"post"} action={"#"}>
                 <div className="flx jst-bt">
                     <div className="col header-title">
                         <h2>settings</h2>
@@ -12,6 +13,7 @@ class Setting extends Component {
                         <button type="submit" className="btn-primary">save</button>
                     </div>
                 </div>
+
                 <div className="card">
                     <div className="frame-title">
                         <h2>Branding</h2>
@@ -21,8 +23,10 @@ class Setting extends Component {
                             <div className="frame-title">
                                 <h3>Site Logo</h3>
                             </div>
-                            <div className="frame-content">
+                            <div className="frame-content file-container">
+                                <button className={"file-btn"}>Upload Logo...</button>
                                 <label className="file">
+                                    Must be .jpg or .png format.
                                     <input type="file" id="file" name="file"/>
                                 </label>
                             </div>
@@ -234,11 +238,13 @@ class Setting extends Component {
                         </div>
                     </div>
                 </div>
+
                 <div className="flx jst-bt">
                     <div className="col flx jst-end">
                         <button type="submit" className="btn-primary mr-t-1">save</button>
                     </div>
                 </div>
+                </form>
             </div>
         );
     }

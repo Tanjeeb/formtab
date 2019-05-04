@@ -9,12 +9,17 @@
     padding: 14px 0;
     text-align: center;
     border: #000080 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 51px;
 }
 .tabs a{
     font-family:  'Open Sans Condensed', sans-serif;
     font-weight: bold;
     text-decoration: none;
     color:#000080;
+    padding: 16px 78px;
 }
 .tabs .active{
     background: #000080;
@@ -66,7 +71,7 @@
 }
 .prm-btn{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     margin-top: 16px;
 }
 .prm-btn ul{
@@ -78,11 +83,12 @@
     border-radius: 4px;
     padding: 7px 3px;
     text-align: center;
-    border: #000080 1px solid;
+    border: #000080 1px solid;;
 }
 .prm-btn a{
     text-decoration: none;
     font-size: 12px;
+    padding: 8px 2px;
 }
 .arrow-up-down{
     background-image: url("../up-and-down.png");
