@@ -387,6 +387,20 @@ html,div{
   width: 100%;
   flex: none;
 }
+@media only screen and (max-width:768px){
+  .wrap{
+    margin: 1em;
+  }
+  .is-6{
+    width: 100%;
+  }
+  .list{
+    width: 50% !important;
+  }
+  .control{
+    flex-wrap: wrap;
+  }
+}
 .mr-t-1{
   margin-top: 1em;
 }
@@ -409,6 +423,10 @@ html,div{
   border: 1px solid #000fff;
   cursor: pointer;
   padding: 8px 20px;
+}
+.btn-primary:hover{
+  background: #000fff;
+  color: white;
 }
 /*====button style end======*/
 .card{

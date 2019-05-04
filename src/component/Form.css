@@ -19,7 +19,8 @@
     font-weight: bold;
     text-decoration: none;
     color:#000080;
-    padding: 16px 78px;
+    padding: 15px 0;
+    width: 100%;
 }
 .tabs .active{
     background: #000080;
@@ -107,4 +108,37 @@
 }
 .reports >.fl-table th,td{
     text-align: left !important;
+}
+.flt-list ul{
+    display: none;
+}
+.active-dr ul{
+    display: block;
+}
+.active-dr span{
+    transform: rotate(180deg);
+}
+.dr-trigger{
+    margin: 15px 0 0 0;
+}
+.ui-slider-handle{
+    border-radius: 50%;
+}
+.ui-widget-header{
+    background: #000fff;
+}
+@media only screen and (max-width:768px){
+    .form-wrap{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .is-7{
+        width: 100% !important;
+    }
+    .sidebar{
+        width: 100%;
+    }
+    .reports{
+        overflow-x: auto;
+    }
 }

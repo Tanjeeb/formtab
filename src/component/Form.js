@@ -16,7 +16,7 @@ class Form extends Component {
                             </ul>
                         </div>
                     </div>
-                    <div className={"flx col is-12"}>
+                    <div className={"flx col is-12 form-wrap"}>
                         <div className={"sidebar "}>
                             <div className={"filters"}>
                                 <p>Filters</p>
@@ -24,16 +24,20 @@ class Form extends Component {
                             </div>
                             <div className={"filter-list"}>
                                 <ul>
-                                    <li className={"flt-list"}>Year<span></span></li>
-                                    <li className={"flt-list"}>Make<span></span></li>
-                                    <li className={"flt-list"}>Model<span></span></li>
-                                    <li className={"flt-list"}>Trim<span></span></li>
-                                    <li className={"flt-list"}>VIN<span></span></li>
-                                    <li className={"flt-list"}>Status<span></span></li>
-                                    <li className={"flt-list"}>Colour<span></span></li>
-                                    <li className={"flt-list"}>Event Name<span></span></li>
-                                    <li className={"flt-list"}>City<span></span></li>
-                                    <li className={"flt-list"}>Auto Grade<span></span></li>
+                                    <li className={"flt-list dropdown"}>Year<span></span>
+                                    <ul className={"dr-trigger"}>
+                                        <li><div id="slider-range"></div></li>
+                                    </ul>
+                                    </li>
+                                    <li className={"flt-list dropdown"}>Make<span className={"dropdown"}></span></li>
+                                    <li className={"flt-list dropdown"}>Model<span className={"dropdown"}></span></li>
+                                    <li className={"flt-list dropdown"}>Trim<span className={"dropdown"}></span></li>
+                                    <li className={"flt-list dropdown"}>VIN<span className={"dropdown"}></span></li>
+                                    <li className={"flt-list dropdown"}>Status<span className={"dropdown"}></span></li>
+                                    <li className={"flt-list dropdown"}>Colour<span className={"dropdown"}></span></li>
+                                    <li className={"flt-list dropdown"}>Event Name<span className={"dropdown"}></span></li>
+                                    <li className={"flt-list dropdown"}>City<span className={"dropdown"}></span></li>
+                                    <li className={"flt-list dropdown"}>Auto Grade<span className={"dropdown"}></span></li>
                                 </ul>
                             </div>
                         </div>

@@ -55,6 +55,7 @@ li{
     overflow: hidden;
     display: inline-block;
 }
+
 .file-btn{
     border: 1px solid #000080;
     color: #000080;
@@ -77,6 +78,9 @@ li{
     color: gray;
     font-size: 12px;
     margin-left: 6px;
+}
+.table-wrap{
+    overflow-x:auto;
 }
 .fl-table {
     border-radius: 5px;

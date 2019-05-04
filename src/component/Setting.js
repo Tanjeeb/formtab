@@ -168,7 +168,7 @@ class Setting extends Component {
                             Notification Preferences
                             </h2>
                         </div>
-                        <div className={"frame-content"}>
+                        <div className={"frame-content table-wrap"}>
                             <table className="fl-table">
                                 <thead>
                                 <tr>
