@@ -1,3 +1,4 @@
+
 .tabs ul{
     display: flex;
     justify-content: space-between;
@@ -113,7 +114,7 @@
     display: none;
 }
 .active-dr ul{
-    display: block;
+    display: flex;
 }
 .active-dr span{
     transform: rotate(180deg);
@@ -126,6 +127,13 @@
 }
 .ui-widget-header{
     background: #000fff;
+}
+.amt{
+    border:0;
+    color:gray;
+    font-family: inherit;
+    font-weight:normal;
+    margin-bottom: 8px;
 }
 @media only screen and (max-width:768px){
     .form-wrap{

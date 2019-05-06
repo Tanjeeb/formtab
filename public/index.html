@@ -17,6 +17,7 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+
   </head>
   <body>
     <div id="root"></div>
@@ -31,21 +32,55 @@
       To create a production bundle, use `npm run build`.
     -->
     <script>
-      $( function() {
-        $(".dropdown").click(function () {
-            $(this).toggleClass('active-dr');
-        });
-        $( "#slider-range" ).slider({
+      $( document ).ready(function()  {
+        $( "#year-range" ).slider({
+
           range: true,
-          min: 0,
-          max: 500,
-          values: [ 75, 300 ],
+          min: 2000,
+          max: 2020,
+          values: [ 2006, 2018 ],
           slide: function( event, ui ) {
-            $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+            $( "#amount" ).val ( ui.values[ 0 ] + " - " + ui.values[ 1 ] );
+
           }
         });
-        $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-                " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+        $( "#amount" ).val( $("#year-range" ).slider( "values", 0 ) +
+                " - " + $( "#year-range" ).slider( "values", 1 ) );
+
+        $( "#odo-range" ).slider({
+
+          range: true,
+          min: 0,
+          max: 200000,
+          values: [ 0,  100000],
+          slide: function( event, ui ) {
+            $( "#odo-amount" ).val (  ui.values[ 0 ]+" kms" + " - " + ui.values[ 1 ] + " kms"  );
+
+          }
+        });
+        $( "#odo-amount" ).val($("#odo-range" ).slider( "values", 0 )+ " kms"  +
+                " - " + $( "#odo-range" ).slider( "values", 1 ) + " kms" );
+
+
+
+        $( "#cr-range" ).slider({
+          range: true,
+          min: 0,
+          max: 50,
+          values: [ 25,  50],
+          slide: function( event, ui ) {
+            $( "#cr-amount" ).val (  ui.values[ 0 ] + " - " + ui.values[ 1 ]  );
+
+          }
+        });
+        $( "#cr-amount" ).val($("#cr-range" ).slider( "values", 0 )+
+                " - " + $( "#cr-range" ).slider( "values", 1 ) );
+
+
+        $(".dropdown").click(function () {
+          $(this).toggleClass('active-dr');
+        });
+
       } );
     </script>
   </body>

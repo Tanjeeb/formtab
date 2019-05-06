@@ -26,8 +26,25 @@ class Form extends Component {
                                 <ul>
                                     <li className={"flt-list dropdown"}>Year<span></span>
                                     <ul className={"dr-trigger"}>
-                                        <li><div id="slider-range"></div></li>
+                                        <li>
+                                            <input type="text" id="amount" className={"amt"}/>
+                                            <div id="year-range"></div>
+                                        </li>
                                     </ul>
+                                    </li>
+                                    <li className={"flt-list dropdown"}>Odometer<span></span>
+                                        <ul className={"dr-trigger"}>
+                                            <li>
+                                                <input type="text" id="odo-amount" className={"amt"}/>
+                                                <div id="odo-range"></div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li className={"flt-list dropdown"}>Condition<span className={"dropdown"}></span>
+                                        <ul className={"dr-trigger cols"}>
+                                            <li className={"col"}> <input type="radio" name="gender" value="male" /> New</li>
+                                            <li className={"col"}><input type="radio" name="gender" value="female" /> Used</li>
+                                        </ul>
                                     </li>
                                     <li className={"flt-list dropdown"}>Make<span className={"dropdown"}></span></li>
                                     <li className={"flt-list dropdown"}>Model<span className={"dropdown"}></span></li>
@@ -38,6 +55,14 @@ class Form extends Component {
                                     <li className={"flt-list dropdown"}>Event Name<span className={"dropdown"}></span></li>
                                     <li className={"flt-list dropdown"}>City<span className={"dropdown"}></span></li>
                                     <li className={"flt-list dropdown"}>Auto Grade<span className={"dropdown"}></span></li>
+                                    <li className={"flt-list dropdown"}>CR Score<span className={"dropdown"}></span>
+                                        <ul className={"dr-trigger"}>
+                                            <li>
+                                                <input type="text" id="cr-amount" className={"amt"}/>
+                                                <div id="cr-range"></div>
+                                            </li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
