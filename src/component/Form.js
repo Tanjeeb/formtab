@@ -22,6 +22,28 @@ class Form extends Component {
                                 <p>Filters</p>
                                 <a href="">Reset</a>
                             </div>
+                            <div className={"flx sort-lists"}>
+                                <div className={"sort-list"} id={""}>
+                                    2009-2018
+                                    <span>X</span>
+                                </div>
+                                <div className={"sort-list"} id={""}>
+                                    0-100,000 kms
+                                    <span>X</span>
+                                </div>
+                                <div className={"sort-list"} id={""}>
+                                    Used
+                                    <span>X</span>
+                                </div>
+                                <div className={"sort-list"} id={""}>
+                                    Chevrolet
+                                    <span>X</span>
+                                </div>
+                                <div className={"sort-list"} id={""}>
+                                    Mazda
+                                    <span>X</span>
+                                </div>
+                            </div>
                             <div className={"filter-list"}>
                                 <ul>
                                     <li className={"flt-list dropdown"}>Year<span></span>

@@ -169,7 +169,7 @@ class Setting extends Component {
                             </h2>
                         </div>
                         <div className={"frame-content table-wrap"}>
-                            <table className="fl-table">
+                            <table className={"fl-table"} id={"setting"}>
                                 <thead>
                                 <tr>
                                     <th></th>

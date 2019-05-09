@@ -44,6 +44,33 @@
     background: white;
     padding: 0 12px;
 }
+.sort-lists{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #f7f7f7;
+    padding: 13px 4px;
+}
+.sort-list{
+    border-radius: 20px;
+    border: #000fff 1px solid;
+    padding:8px 25px 8px 10px;
+    position: relative;
+    margin-top: 8px;
+    font-size: 12px;
+}
+.sort-list span{
+    font-size: 11px;
+    cursor: pointer;
+    padding: 8px;
+    position: absolute;
+    right: 2px;
+    top: 0px;
+}
+.sort-list span:hover{
+    color: navy;
+    transition: 1s;
+    transform: rotateX(180deg);
+}
 .filters{
     display: flex;
     justify-content: space-between;

@@ -69,12 +69,12 @@
           max: 50,
           values: [ 25,  50],
           slide: function( event, ui ) {
-            $( "#cr-amount" ).val (  ui.values[ 0 ] + " - " + ui.values[ 1 ]  );
+            $( "#cr-amount" ).val (  ui.values[ 0 ]/10 + " - " + ui.values[ 1 ]/10  );
 
           }
         });
-        $( "#cr-amount" ).val($("#cr-range" ).slider( "values", 0 )+
-                " - " + $( "#cr-range" ).slider( "values", 1 ) );
+        $( "#cr-amount" ).val($("#cr-range" ).slider( "values", 0 )/10+
+                " - " + $( "#cr-range" ).slider( "values", 1 )/10 );
 
 
         $(".dropdown").click(function () {

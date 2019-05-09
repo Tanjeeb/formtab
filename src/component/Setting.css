@@ -97,8 +97,9 @@ li{
 .fl-table td, .fl-table th {
     padding: 8px;
 }
-.fl-table td:not(:first-child){
-    text-align: center;
+
+#setting td:not(:first-child){
+    text-align: center !important;
 }
 .fl-table td {
     font-size: 12px;
